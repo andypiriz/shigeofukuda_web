@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Design of Shigeo Fukuda</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-centrado">
+            <div class="contenedor-flex">
+                <a href="index.html">
+                    <img id="logo" src="img/logo.jpg" alt="The Design of Shigeo Fukuda logo">
+                </a>
+                <div id="botones-login">
+                    <ul>
+                        <li>
+                            <a href="#" class="boton-blanco">Ingresar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="boton-rojo">Registrarse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="boton-blanco"><img src="img/carrito-de-compras.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hola!</a>
+                </li>
+                <li>
+                    <a href="#">Bio</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Publicaciones</a>
+                </li>
+                <li>
+                    <a class="activo" href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="imagen-portada">
+            <div class="contenedor-centrado">
+                <h3>Posters</h3>
+                <h1>Tabla de medidas y precios:</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del poster</th>
+                            <th>Medidas (cms)</th>
+                            <th>Medidas (pulgadas)</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fila-impar">
+                            <td>Poster 1</td>
+                            <td>48,26 x 33,02 cm</td>
+                            <td>19" x 13"</td>
+                            <td>$0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Poster 2</td>
+                            <td>50,8 x 60,92 cm</td>
+                            <td>20" x 24"</td>
+                            <td>$0,00</td>
+                        </tr>
+                        <tr class="fila-impar">
+                            <td>Poster 3</td>
+                            <td>60,92 x 60,92 cm</td>
+                            <td>24" x 24"</td>
+                            <td>$0,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="botones boton-transparencia" href="#">Conocer más...</a>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor-centrado">
+                <h1>Contáctenos</h1>
+                <form action="shigeofukudaform.php" method="POST">
+                    <div class="contenedor-flex-contacto">
+                        <div class="inputs-primarios">
+                            <label for="id-nombre">Nombre<span>*</span></label>
+                            <input class="info-basica" type="text" id="id-nombre">
+                        </div>
+                        <div class="inputs-primarios">
+                            <label for="id-correo">Correo electrónico<span>*</span></label>
+                            <input class="info-basica" type="email" id="id-correo">
+                        </div>
+                        <div class="inputs-primarios">
+                            <div>
+                                <label for="id-pais">País<span>*</span></label>
+                            </div>
+                            <div>
+                                <select name="pais" id="id-pais">
+                                    <option value="uruguay" selected>Uruguay</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="paraguay">Paraguay</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor-flex-contacto">
+                        <div>
+                            <label for="id-comentario">Comentario<span>*</span></label>
+                        </div>
+                        <div>
+                            <textarea name="comentario" id="id-comentario" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <p>¿Deseas recibir nuestro newsletter?</p>
+                            <div class="contenedor-flex-contacto">
+                                <div class="col-33">
+                                    <input type="radio" name="newsletter" id="id-si">
+                                    <label for="id-si">Sí</label>
+                                </div>
+                                <div class="col-33">
+                                    <input type="radio" name="newsletter" id="id-no">
+                                    <label for="id-no">No</label>
+                                </div>
+                                <div class="col-33"></div>
+                            </div>
+                            <div class="contenedor-flex-contacto">
+                                <div>
+                                    <input type="checkbox" name="terminos" id="id-terminos">
+                                    <label for="id-terminos">Acepto términos y condiciones<span>*</span></label>
+                                </div>
+                                <div>
+                                    <button class="botones" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="tercer-seccion">
+            <div class="contenedor-centrado">
+                <div class="contenedor-flex-contacto">
+                    <h1>Biografía</h1>
+                    <a href="https://es.wikipedia.org/wiki/Shigeo_Fukuda" target="_blank">Conocer más...</a>
+                </div>
+                <div class="contenedor-flex-contacto">
+                    <div class="contenedor-flex-contacto col-33">
+                        <div>
+                            <img src="img/shigeo.jpg" alt="Foto de Shigeo Fukuda">
+                        </div>
+                        <div>
+                            <h4>Shigeo Fukuda</h4>
+                            <h2>Origen</h2>
+                            <p>Nacido en Tokio, Japón en 1932, en su infancia quedaron grabadas las impresiones de la
+                                Segunda Guerra mundial. Es probable que esta experiencia haya
+                                formado el carácter de su obra, anti-belicista y socialmente crítica y reflexiva.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-flex-contacto col-33">
+                        <div>
+                            <img src="img/estilo-minimalista.jpg" alt="Diseño minimalista Josef Müller-Brockmann">
+                        </div>
+                        <div>
+                            <h4>Shigeo Fukuda</h4>
+                            <h2>Inicios</h2>
+                            <p>Admirador del estilo minimalista de la Escuela Suiza, se forma durante la posguerra en la
+                                Universidad Nacional de Bellas Artes y Música de Tokio, donde se gradúa en el ‘56.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-flex-contacto col-33">
+                        <div>
+                            <img src="img/takashi-kono.jpg" alt="Foto de Takashi Kono">
+                        </div>
+                        <div>
+                            <h4>Shigeo Fukuda</h4>
+                            <h2>Influencias</h2>
+                            <p>En su obra se evidencia la influencia de Takashi Kono (1906-1999), diseñador gráfico y
+                                maestro del cartel también japonés, quien lo precede.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-centrado">
+            <p>The Design of Shigeo Fukuda &copy;</p>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook.png" alt="Botón de redirección a Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/instagram.png" alt="Botón de redirección a Instagram">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="img/twitter.png" alt="Botón de redirección a Twitter">
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="img/pinterest.png" alt="Botón de redirección a Pinterest">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
